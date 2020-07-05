@@ -68,7 +68,7 @@ body {
   }
 }
 
-.topics-index-page {
+.topics-index-page,.categories-show-page {
   .topic-list {
     .nav>li>a {
       position: relative;
@@ -102,3 +102,10 @@ body {
     }
   }
 }
+
+.simditor-body img {
+  max-width:100%;
+}
+
+
+@import "topic_body";
