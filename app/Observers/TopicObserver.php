@@ -26,8 +26,8 @@ class TopicObserver
     	 
     	$topic->excerpt = make_excerpt($topic->body);
     	
-    	if ( ! $topic->slug) {
-    		$topic->slug = app(SlugTranslateHandler::class)->translate($topic->title);
-    	}
+//     	if ( ! $topic->slug) {
+//     		$topic->slug = app(SlugTranslateHandler::class)->translate($topic->title);
+//     	}
     }
 }
