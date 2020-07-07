@@ -14,6 +14,9 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         Schema::defaultStringLength(200);
+        if (app()->isLocal()) {
+        	$this->app->register(\VIACreative\SudoSu\ServiceProvider::class);
+        }
     }
 
     /**
