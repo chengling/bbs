@@ -5,7 +5,7 @@ use App\Models\Topic;
 use App\Models\Reply;
 use Carbon\Carbon;
 use Cache;
-use Db;
+use DB;
 use Arr;
 trait ActiveUserHelper{
 	// 用于存放临时用户数据
