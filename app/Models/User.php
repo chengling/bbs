@@ -30,13 +30,8 @@ class User extends Authenticatable implements MustVerifyEmail,JWTSubject
         'name', 'email', 'password','introduction','avatar','phone',  'weixin_openid', 'weixin_unionid'
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
+  protected $hidden = [
+        'password', 'remember_token', 'weixin_openid', 'weixin_unionid'
     ];
 
     /**
